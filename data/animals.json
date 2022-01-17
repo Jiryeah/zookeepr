@@ -6,9 +6,9 @@
       "species": "bear",
       "diet": "carnivore",
       "personalityTraits": [
-      "hungry",
-      "zany",
-      "loving"
+        "hungry",
+        "zany",
+        "loving"
       ]
     },
     {
@@ -17,8 +17,8 @@
       "species": "gorilla",
       "diet": "omnivore",
       "personalityTraits": [
-      "anxious",
-      "goofy"
+        "anxious",
+        "goofy"
       ]
     },
     {
@@ -27,8 +27,8 @@
       "species": "gorilla",
       "diet": "omnivore",
       "personalityTraits": [
-      "quirky",
-      "rash"
+        "quirky",
+        "rash"
       ]
     },
     {
@@ -37,9 +37,9 @@
       "species": "bear",
       "diet": "carnivore",
       "personalityTraits": [
-      "impish",
-      "sassy",
-      "brave"
+        "impish",
+        "sassy",
+        "brave"
       ]
     },
     {
@@ -48,8 +48,8 @@
       "species": "penguin",
       "diet": "herbivore",
       "personalityTraits": [
-      "loving",
-      "goofy"
+        "loving",
+        "goofy"
       ]
     },
     {
@@ -58,8 +58,8 @@
       "species": "ostrich",
       "diet": "herbivore",
       "personalityTraits": [
-      "hungry",
-      "goofy"
+        "hungry",
+        "goofy"
       ]
     },
     {
@@ -68,7 +68,7 @@
       "species": "Doggo",
       "diet": "herbivore",
       "personalityTraits": [
-      "zany"
+        "zany"
       ]
     },
     {
@@ -77,9 +77,9 @@
       "species": "Doggo",
       "diet": "herbivore",
       "personalityTraits": [
-      "hungry",
-      "zany",
-      "goofy"
+        "hungry",
+        "zany",
+        "goofy"
       ]
     },
     {
@@ -88,7 +88,7 @@
       "species": "Quokka",
       "diet": "herbivore",
       "personalityTraits": [
-      "loving"
+        "loving"
       ]
     },
     {
@@ -97,7 +97,7 @@
       "species": "Tiger",
       "diet": "carnivore",
       "personalityTraits": [
-      "hungry"
+        "hungry"
       ]
     },
     {
@@ -105,9 +105,54 @@
       "species": "Koala Bear",
       "diet": "herbivore",
       "personalityTraits": [
-      "loving"
+        "loving"
       ],
       "id": "10"
+    },
+    {
+      "name": "Larry",
+      "species": "lemur",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "11"
+    },
+    {
+      "name": "Larry",
+      "species": "lemur",
+      "diet": "LETS GO BRANDON",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "12"
+    },
+    {
+      "name": "Larry",
+      "species": "lemur",
+      "diet": "LETS GO BRANDON",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "13"
+    },
+    {
+      "name": "Larry",
+      "species": "lemur",
+      "diet": "LETS GO BRANDON",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "14"
+    },
+    {
+      "name": "Larry",
+      "species": "lemur",
+      "diet": "LETS GO BRANDON",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "15"
     }
   ]
 }
