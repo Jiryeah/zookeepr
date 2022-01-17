@@ -94,7 +94,20 @@ app.get(`/api/animals/:id`, (req, res) => {
   }
 });
 
+// route to index.html
 app.get(`/`, (req, res) => {
+  res.sendFile(path.join(__dirname, `./public/index.html`));
+});
+// route to animals.html
+app.get(`/animals`, (req,res) => {
+  res.sendFile(path.join(__dirname, `./public/animals.html`));
+});
+// route to zookeepers.html
+app.get(`/zookeepers`, (req, res) => {
+  res.sendFile(path.join(__dirname, `./public/zookeepers.html`));
+});
+// wildcard for undefined routes. "*" should ALWAYS BE LAST.
+app.get(`*`, (req, res) => {
   res.sendFile(path.join(__dirname, `./public/index.html`));
 });
 
