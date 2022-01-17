@@ -1,3 +1,6 @@
+const apiRoutes = require(`./routes/apiRoutes`);
+const htmlRoutes = require(`./routes/htmlRoutes`);
+
 const fs = require(`fs`);
 const path = require(`path`);
 
@@ -14,23 +17,8 @@ app.use(express.json());
 // middleware to instruct the server to make front-end files available
 app.use(express.static(`public`));
 
-// route to index.html
-app.get(`/`, (req, res) => {
-  res.sendFile(path.join(__dirname, `./public/index.html`));
-});
-// route to animals.html
-app.get(`/animals`, (req,res) => {
-  res.sendFile(path.join(__dirname, `./public/animals.html`));
-});
-// route to zookeepers.html
-app.get(`/zookeepers`, (req, res) => {
-  res.sendFile(path.join(__dirname, `./public/zookeepers.html`));
-});
-// wildcard for undefined routes. "*" should ALWAYS BE LAST.
-app.get(`*`, (req, res) => {
-  res.sendFile(path.join(__dirname, `./public/index.html`));
-});
-
+app.use(`/api`, apiRoutes);
+app.use(`/`, htmlRoutes);
 
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
