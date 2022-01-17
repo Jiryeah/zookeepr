@@ -3,6 +3,7 @@ const path = require(`path`);
 
 const express = require(`express`);
 const { animals } = require(`./data/animals`);
+
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -10,6 +11,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
+// middleware to instruct the server to make front-end files available
+app.use(express.static(`public`));
 
 
 function filterByQuery(query, animalsArray) {
@@ -89,6 +92,10 @@ app.get(`/api/animals/:id`, (req, res) => {
   } else {
     res.send(404);
   }
+});
+
+app.get(`/`, (req, res) => {
+  res.sendFile(path.join(__dirname, `./public/index.html`));
 });
 
 app.post(`/api/animals`, (req, res) => {
